@@ -220,7 +220,8 @@ nav{position:sticky;top:0;z-index:100;background:rgba(20,28,36,.97);backdrop-fil
 .rv-lbl{font-size:12px;color:var(--muted-l);font-weight:300}
 
 /* TESTIMONIALS */
-.testi{background:var(--navy-s);padding:100px 0;border-top:1px solid var(--navy-b);border-bottom:1px solid var(--navy-b)}
+.testi{position:relative;background:linear-gradient(180deg,rgba(20,28,36,.93) 0%,rgba(20,28,36,.97) 100%),url('images/testimonials-bg.jpg') center/cover no-repeat;padding:100px 0;border-top:1px solid var(--navy-b);border-bottom:1px solid var(--navy-b)}
+.testi .c{position:relative;z-index:1}
 .testi h2{font-family:var(--fd);font-size:46px;font-weight:800;color:var(--white);margin-bottom:48px}
 .testi-g{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .tc{background:var(--navy-c);border:1px solid var(--navy-b);padding:36px 32px}
@@ -349,6 +350,7 @@ footer{background:var(--navy);border-top:2px solid var(--orange);padding:72px 0 
   .method-ai { padding: 16px !important; margin-bottom: 20px !important; }
   .method-ai h4 { font-size: 13px !important; }
   .method-ai p { font-size: 12px !important; line-height: 1.6 !important; }
+  .method .sc-img { grid-column: 1/-1 !important; min-height: 200px !important; }
 
   /* FREE FORGE */
   .free { padding: 48px 0 !important; }
@@ -646,7 +648,7 @@ footer{background:var(--navy);border-top:2px solid var(--orange);padding:72px 0 
         <a href="#contact" class="pc-cta pc-cta-o">Start an Instant Forge →</a>
         <div style="margin-top:12px;padding:16px;background:var(--light-b);border:1px solid var(--light-b)">
           <div style="font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:6px">Optional add-on</div>
-          <div style="font-family:var(--fd);font-size:14px;font-weight:800;color:var(--navy);margin-bottom:4px">2-Hour Presentation + Next Steps Session</div>
+          <div style="font-family:var(--fd);font-size:14px;font-weight:800;color:var(--navy);margin-bottom:4px">2-Hour Presentation / Next Steps Session</div>
           <div style="font-size:13px;color:#4A5A6A;line-height:1.5;margin-bottom:8px">Video conference walkthrough of your full report - covering the key findings, the recommendation, and a collaborative next steps plan tailored to your business.</div>
           <div style="font-family:var(--fd);font-size:18px;font-weight:900;color:var(--navy)">+ $990 <span style="font-size:12px;font-weight:400;color:var(--muted)">NZD</span></div>
         </div>
@@ -823,6 +825,11 @@ footer{background:var(--navy);border-top:2px solid var(--orange);padding:72px 0 
         <div class="sc-body">What to pursue, what to defer, what to abandon - and specifically what to do in the first 30 days. The VentureForge Opportunity Score is the cumulative weighted composite of all stage scores. Not a summary of options. A decision.</div>
         <div class="sc-tags"><span class="st st-all">All Forges</span></div>
       </div>
+      <div class="sc-img" style="grid-column:span 2;position:relative;overflow:hidden;min-height:200px">
+        <img src="images/methodology-whiteboard.jpg" alt="Team collaborating around a whiteboard, mapping out strategy" style="width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:50% 15%;display:block;filter:grayscale(15%)">
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,28,36,.05) 0%,rgba(20,28,36,.8) 100%)"></div>
+        <div style="position:absolute;left:0;right:0;bottom:0;padding:20px 24px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:var(--muted-l)">Where AI output becomes human conviction - the Challenge Gate in practice</div>
+      </div>
     </div>
   </div>
 </section>
@@ -985,7 +992,7 @@ footer{background:var(--navy);border-top:2px solid var(--orange);padding:72px 0 
           <div class="cf-lbl">The Executive Recommendation (Stage 9)</div>
           <p>The recommendation identifies one concept to pursue immediately, one to monitor pending a specific market signal, and one to abandon - with a clear explanation of why the most commercially attractive concept on paper was not the right move for this brand at this moment. Your Forge delivers the same: a prioritised recommendation and a clear 30-day action plan for your specific business.</p>
           <div style="margin-top:14px;padding:14px 16px;background:var(--navy);border-left:2px solid var(--orange);display:flex;align-items:center;justify-content:space-between">
-            <span style="font-size:13px;color:var(--muted-l);font-weight:600">VentureForge Opportunity Score: <strong style="color:var(--orange)">-/120</strong></span>
+            <span style="font-size:13px;color:var(--muted-l);font-weight:600">VentureForge Opportunity Score: <strong style="color:var(--orange)">82/100</strong></span>
             <a href="#contact" style="font-size:11px;color:var(--white);font-weight:700;background:var(--orange);padding:6px 14px;letter-spacing:.04em">RUN YOUR FORGE →</a>
           </div>
         </div>
